@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organização Financeira</title>
+    <link href="styles/styles.css" rel="stylesheet"/>
+    <link rel="shortcut icon" type="image.png" href="./assets/logo.png"/>
+</head>
+<body>
+
+    <nav id="menu">
+        <ul>
+            <li><a href="/home/">Home</a></li>
+            <li><a href="/transacoes/">Transações</a></li>    
+            <li><a href="/relatorios/">Relatórios</a></li>
+            <li><a href="/administracao/">Administração</a></li>
+            <li><a href="/logout/">Logout</a></li>            
+        </ul>
+    </nav>
+
+    <header>
+        <div class="header">
+            <!--  <img src="./assets/logo.png" width="100px" height="100px"> -->
+        </div>
+    </header>
+    <br>
+
+    <main>
+        <div class="formulario">
+            <form action="/input-transacoes" method="post">
+                <div>
+                    <input type="radio" name=myradio value="1">Despesa
+                    <input type="radio" name=myradio value="2">Receita                
+                </div>
+                <br>
+                <div>
+                    <label  for="category">Categoria:</label>
+                    <select name="Categoria">
+                        <option value="1">Supermecado</option>
+                        <option value="2">Condomínio</option>
+                        <option value="3">Combustível</option>
+                        <option value="4">Aluguel</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="description">Descrição:</label>
+                    <input type="text" name="description">
+                </div>
+                <br>
+                <div>
+                    <label for="date">Data:</label>
+                    <input type="date">
+                </div>
+                <br>
+                <div>
+                    <button id="submitbutton" type="submit" formmethod="post">Enviar</button> 
+                </div>         
+            </form>
+        </div>  
+    </main>
+    <div >
+        <footer>
+            <p>Desenvolvido por Organização Financeira DH</p>
+        </footer>
+    </div>
+    
+</body>
+
+</html>
