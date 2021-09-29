@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organização Financeira</title>
+    <link href="styles/styles.css" rel="stylesheet"/>
+    <link rel="shortcut icon" type="image.png" href="./img/logo.png"/>
+</head>
+<body>
+
+    <nav id="menu">
+        <ul>
+            <li><a href="/home/">Home</a></li>
+            <li><a href="/transacoes/">Transações</a></li>    
+            <li><a href="/relatorios/">Relatórios</a></li>
+            <li><a href="/administracao/">Administração</a></li>
+            <li><a href="/logout/">Logout</a></li>            
+        </ul>
+    </nav>
+
+    <header>
+        <div class="header">
+            <!--  <img src="./img/logo.png" width="100px" height="100px"> -->
+        </div>
+    </header>
+    <br>
+
+    <main>
+        <div class="formulario">
+            <form action="/input-transacoes" method="post">
+
+                <br>
+                <div>
+                    <label  for="category">tipo de Acesso:</label>
+                    <select name="Categoria">
+                        <option value="1">Administrador</option>
+                        <option value="2">Usuário</option>
+
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="usuario">Nome do usuário:</label>
+                    <input type="text" name="usuario">
+                </div>
+                <br>
+                <div>
+                    <label for="senhaAtual">Senha atual:</label>
+                    <input type="text" name="senhaAtual">
+                </div>
+                <br>
+                <div>
+                    <label for="senhaNova">Nova senha:</label>
+                    <input type="text" name="senhaNova">
+                </div>
+                <br>
+                <div>
+                    <label for="senhaNova2">Digite novamente:</label>
+                    <input type="text" name="senhaNova2">
+                </div>
+
+
+
+                <div>
+                    <button id="atualizar" type="submit" formmethod="post">Atualizar</button> 
+                </div>         
+            </form>
+        </div>  
+    </main>
+    <div >
+        <footer>
+            <p>Desenvolvido por Organização Financeira DH</p>
+        </footer>
+    </div>
+    
+</body>
+
+</html>
